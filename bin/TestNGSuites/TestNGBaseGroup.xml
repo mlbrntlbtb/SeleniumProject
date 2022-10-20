@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<groups>
+			<run>
+				<include name="TestNGGroup"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNGBasics.TestNGBaseGrouping"></class>
+			<class name="TestNGBasics.TestNGBaseGrouping2"></class>
+		</classes>
+	</test>
+</suite>

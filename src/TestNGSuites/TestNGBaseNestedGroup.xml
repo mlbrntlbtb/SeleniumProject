@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Test">
+		<groups>
+			<define name="IncludeGroups">
+				<include name="TestNGGroup1"/>
+				<include name="TestNGGroup2"/>
+			</define>
+			
+			<define name="ExcludeGroups">
+				<include name="TestNGExcludeGroup"/>
+				<include name="TestNGIncludeRegEx"/>
+			</define>
+			
+			<run>
+				<include name="IncludeGroups"/>
+				<exclude name="ExcludeGroups"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestNGBasics.TestNGBaseMultiGrouping"></class>
+		</classes>
+	</test>
+</suite>
